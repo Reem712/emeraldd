@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHECKOUT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<form action="./includes2/formhnadler.php" method="post">
+  <header id="navContent">
+      <input type="checkbox" name="" id="toggler">
+      <label for="toggler"class="fas fa-bars"></label>     
+      <a href="index.html" class="logo" ><img src="./img/bb.jpg" width="30" height="25" class="i">EMERALDA<span>.</span></a>
+     <nav class="navbar">
+      <a href="index.html" class="">Home</a>
+      <a href="about.html" class="">About</a>
+      <a href="productsm.html" class="">Men</a>
+      <a href="productsw.html" class="">Women</a>
+      <a href="contact.php" class="">Contact Us</a>
+      <a href="login.php" class="">Login/Sign-up</a>
+  
+  </nav>
+      <div class="icon">
+      <a href="#" class="fas fa-heart"></a>
+          <a href="cart.html" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-user"></a>
+      </div>
+  
+  </header>
+  
+    <div id="loader">
+        <div class="Ripple">
+            <div class="loader">
+              <div></div>
+              <div></div>
+            </div>
+        </div>
+      </div>
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<main id="pageContent">
+
+    <div class="container">
+        <div class="card cart">
+          <label class="title">CHECKOUT</label>
+          <div class="steps">
+            <div class="step">
+              <div class="address">
+                <span>SHIPPING</span>
+                    <input type="text" name="address" placeholder="Enter your address" class="input_field" required>
+              </div>
+              <hr>
+              <div class="Visa">
+                <span>PAYMENT METHOD</span>
+                <span>Visa</span>
+                <input type="text" name="visa" placeholder="Enter your visa number" class="input_field" required>
+                
+              </div>
+              <hr>
+              <div class="promo">
+                <span>HAVE A PROMO CODE?</span>
+                  <input type="text" name="code" placeholder="Enter a Promo Code" class="input_field" required>
+              </div>
+              <hr>
+              <div class="payments">
+                <span>PAYMENT</span>
+                <div class="details">
+                  <span>Subtotal:</span>
+                  <span>$240.00</span>
+                  <span>Shipping:</span>
+                  <span>$10.00</span>
+                  <span>Tax:</span>
+                  <span>$30.40</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card checkout">
+          <div class="footer">
+            <label class="price">$280.40</label>
+            <a href="index.html"><button class="checkout-btn">Checkout</button></a>
+          </div>
+        </div>
+      </div>
+      
+  </main>
+  </form>
+</body>
+</html>

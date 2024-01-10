@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emeralda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emeralda</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -17,13 +17,13 @@
     <a href="about.html" class="">About</a>
     <a href="productsm.html" class="">Men</a>
     <a href="productsw.html" class="">Women</a>
-    <a href="contact.html" class="">Contact Us</a>
-    <a href="login.html" class="">Login/Sign-up</a>
+    <a href="contact.php" class="">Contact Us</a>
+    <a href="login.php" class="">Login/Sign-up</a>
 
 </nav>
     <div class="icon">
     <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="cart.php" class="fas fa-shopping-cart"></a>
         <a href="#" class="fas fa-user"></a>
     </div>
 
@@ -51,34 +51,70 @@
         <p>Jewelry represents a symbol that can indicate water, social status, protection, religion, or even cryptography. Before we explore those connotations and the mechanism of jewelry, we must take a look at its ethnic history. The history goes back to very distant images, but because jewelry As an example, the origins of the discovery of jewelry can be traced back to about 25,000 years ago.</p>
         <a href="./productsw.html" class= "btn">shop now</a>
     </div>  
-   <pre>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-       <div class="content"> <p id="dd"><p>
-        <script> 
-        const t=new Date();
-        const f=new Intl.DateTimeFormat("em-un",{
-                    dateStyle:"short",
-                    timeStyle :"full",
-                })
-                console.log(f.format(t))
-    
-         document.getElementById("dd").innerHTML=f.format(t);
-        </script>
+    </Section>
+
+    <div class="carousel">
+<h1>       best seller</h1><br><br><br>
+      <div class="carousel-images">
+        <img src="img/WhatsApp Image 2023-11-07 at 18.47.32_f6a38326.jpg" alt="Image 1">
+        <img src="img/WhatsApp Image 2023-11-07 at 18.47.32_cf57a281.jpg" alt="Image 2">
+        <img src="img/WhatsApp Image 2023-11-07 at 18.47.27_e3dd72a2.jpg" alt="Image 3">
+        <img src="img/IMG-20231107-WA0050.jpg" alt="Image 4">
+        <img src="img/IMG-20231107-WA0049.jpg" alt="Image 5">
+        <img src="img/IMG-20231107-WA0048.jpg" alt="Image 6">
+        <img src="img/IMG-20231107-WA0046.jpg" alt="Image 7">
+        <img src="img/IMG-20231107-WA0045.jpg" alt="Image 8">
+        <img src="img/IMG-20231107-WA0044.jpg" alt="Image 9">
+      </div>
+      <button class="prev" onclick="prevImage()">❮</button>
+      <button class="next" onclick="nextImage()">❯</button>
+    </div>
+    <style>
+      button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+    </style>
+    <script src="script.js"></script>
+
+    <section class="date" id="date">
+    <pre>
+       <div> 
+        <p id="datetime"><p>
+          <script>
+            function updateDateTime() {
+              const now = new Date();
+              const datetimeElement = document.getElementById('datetime');
+        
+              const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                hour12: true,
+                timeZone: 'Africa/Cairo'
+              };
+        
+              datetimeElement.textContent = now.toLocaleString('en-US', options);
+            }
+
+            setInterval(updateDateTime, 1000);
+
+            updateDateTime();
+          </script>
 </div>
 </pre>
+</section>
 </main>
 </body>
 </html>
